@@ -138,13 +138,15 @@
 
 			elements.css('min-height', sameHeight);
 
+            return this;
+
 		}
 
 	}( jQuery ));
 
 	jQuery(document).ready(function($) {
 
-		$('.autoheight > div').sameHeight();
+		$('.autoheight > div').sameHeight().css('background', 'red');
 	
 	});	
 
